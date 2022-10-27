@@ -123,9 +123,33 @@
         }
     ?>
 
-    <!-- Nyheter -->
 
-
+    <!-- Om oss -->
+    <?php
+        if(is_page("om-oss")){
+            query_posts('category_name=anstalld');
+            if(have_posts()){
+                ?>
+                <section class="profiles">
+                    <h2>De anställda</h2>
+                    <div class="profile-flex">
+                    <?php
+                        while(have_posts()){
+                            the_post();
+                            ?>
+                            <div class="profile">
+                                <?php the_post_thumbnail('profile'); ?>
+                                <p class="name"><?php the_title(); ?></p>
+                            </div>
+                            <?php
+                        }
+                    ?>
+                    </div>
+                </section>
+                <?php
+            }
+        }
+    ?>
 
 
 </main>

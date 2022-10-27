@@ -27,6 +27,27 @@
 }
 
 
+.pagination{
+    width: fit-content;
+    margin: 5em auto;
+}
+.pagination a, .current{
+    padding: 0.5em;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    font-family: 'Maven Pro', sans-serif;
+}
+.pagination a:hover{
+    text-decoration: underline;
+}
+.pagination a i{
+    font-size: small;
+}
+
+.current{
+    background-color: var(--accent-color);
+}
 
 
 /* Media query for tablet */

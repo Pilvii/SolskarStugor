@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Raleway&display=swap');
 @import url('header.css');
 @import url('footer.css');
 
@@ -66,6 +66,9 @@ button{
 img{
     height: auto;
 }
+
+
+
 
 /* Media query for tablet */
 @media screen and (min-width: 700px){

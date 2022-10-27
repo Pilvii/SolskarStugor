@@ -30,6 +30,8 @@ add_image_size('house-preview-small', 375, 188, array('center', 'center'));
 add_image_size('preview', 322, 322, array('center', 'center'));
 add_image_size('thumbnail-big', 653, 434, array('center', 'center'));
 add_image_size('side', 235, 1019, array('center', 'center'));
+add_image_size('profile', 215, 215, array('center', 'center'));
+
 
 
 
@@ -38,4 +40,13 @@ add_action('admin_menu', 'remove_menus');
 
 function remove_menus(){
     remove_menu_page('edit-comments.php');
+}
+
+
+
+//Skapa titlar för sidorna
+add_action( 'after_setup_theme', 'add_titles' );
+
+function add_titles(){
+    add_theme_support( 'title-tag' );
 }
