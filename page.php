@@ -53,10 +53,10 @@
             
             query_posts('category_name=stuga');
             if(have_posts()){
+                ?><section class="houses"><?php
                 while(have_posts()){
                     the_post();
                     ?>
-                    <section class="houses">
                         <h2>Stugorna</h2>
                         <div class="flex">
                             <article>
@@ -80,10 +80,10 @@
 
                             </article>
                         </div>
-                    </section>
-                    <?php
-
+                        <?php
+                        
                 }
+                ?></section><?php
             }
             
         }
@@ -93,7 +93,33 @@
     <!-- Aktiviteter -->
     <?php
         if(is_page("aktiviteter")){
-            
+            query_posts('category_name=aktivitet');
+            if(have_posts()){
+                ?><section class="activities"><?php
+                while(have_posts()){
+                    the_post();
+                    ?>
+
+                        <article>
+                            <a href="<?php the_permalink();?>">
+                                <picture>
+                                    <source media="(max-width: 700px)" srcset="<?php the_post_thumbnail_url('activity-small'); ?>">
+                                    <?php the_post_thumbnail('preview'); ?>
+                                </picture>
+                                
+                                <div class="veil"></div>
+                                <p class="title-overlay"><?php the_title();?></p>
+                                <p class="under"><?php the_title();?></p>
+
+                            </a>
+                        </article>
+
+                        
+                        
+                        <?php
+                }
+                ?></section><?php
+            }
         }
     ?>
 
