@@ -54,7 +54,7 @@ i{
 }
 
 /* Aktiv länk i menun */
-.current-menu-item::after, #navmenu ul li a:hover:after{
+.current-menu-item a::after, #navmenu ul li a:hover:after{
     content: "";
     height: 10px !important;
     width: 100%;

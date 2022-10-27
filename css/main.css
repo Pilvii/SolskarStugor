@@ -56,8 +56,16 @@ button{
 
 .content{
     max-width: 500px;
+    width: 90%;
+    margin: auto;
+}
+.content p{
+    width: 100%;
 }
 
+img{
+    height: auto;
+}
 
 /* Media query for tablet */
 @media screen and (min-width: 700px){

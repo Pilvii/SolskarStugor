@@ -15,7 +15,9 @@ h1{
     position: relative;
     margin-bottom: 4em;
 }
-
+.hero{
+    display: none;
+}
 
 /* Media query för tablet */
 @media screen and (min-width: 700px){
@@ -32,6 +34,7 @@ h1{
     }
     .hero{
         max-width: 1291px;
+        height:auto;
         width: 85%;
         display: block;
         margin: auto;
