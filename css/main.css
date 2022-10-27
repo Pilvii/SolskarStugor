@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('header.css');
+@import url('footer.css');
+
+@import url('hero.css');
+@import url('livewithus.css');
+@import url('activities.css');
+@import url('news.css');
+@import url('contact.css');
+
+
+
+@import url('profiles.css');
+@import url('post.css');
+
+
+
+:root{
+    --main-color: #023047;
+    --accent-color: #ffb703;
+}
+
+body{
+    margin: 0;
+}
+
+h1, h2, h3, p, a, input, label{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+    max-width: 660px;
+    width: 90%;
+}
+
+
+button{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+}
+
+.content{
+    max-width: 500px;
+}
+
+
+/* Media query for tablet */
+@media screen and (min-width: 700px){
+    h1{
+        font-size: 30px;
+    }
+
+
+
+    p{
+        font-size: 20px;
+    }
+
+}
+
+/* Media query for desktop */
+@media screen and (min-width: 1200px){
+
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 32px;
+    }
+
+
+}

@@ -1,0 +1,89 @@
+.content{
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    margin:0;
+    margin-top: 3em;
+}
+
+h3{
+    margin-bottom: 0.5em;
+}
+
+.price{
+    font-size: 14px !important;
+    margin-top: 0;
+}
+
+.houses img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+.houses article{
+    margin: auto;
+    max-width: 375px;
+    margin-top: 3em;
+}
+
+.text{
+    padding: 0 1em;
+    font-size: 14px;
+}
+.text p{
+    font-size: 14px;
+}
+.text a{
+    text-decoration: none;
+    color: black;
+    background-color: var(--accent-color);
+    padding: 0.5em 1.5em;
+    display: block;
+    width: fit-content;
+    border-radius: 5px;
+}
+.text a:hover{
+    text-decoration: underline;
+}
+
+/* Media query för större än mobilens bild */
+@media screen and (min-width: 430px){
+    .text{
+        padding: 0;
+    }
+}
+
+/* Media query för tablet */
+@media screen and (min-width: 700px){
+    .houses article{
+        max-width: 400px;
+        padding: 1em;
+
+    }
+    .text{
+        padding: 0;
+        font-size: 16px;
+    }
+    .text p{
+        font-size: 16px;
+    }
+
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+        max-width: 1447px;
+    }
+    .text, a{
+        font-size: 16px;
+    }
+}
+
+
+/* Media query för desktop */
+@media screen and (min-width: 1200px){
+
+}

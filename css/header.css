@@ -1,0 +1,109 @@
+.logo img{
+    width: 81px;
+    position: absolute;
+    z-index: 1000;
+    margin: 0.3em;
+}
+.logo:focus>img{
+    outline: auto;
+}
+
+i{
+    font-size: 30pt;
+}
+
+#menu-btn{
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+    margin: 0.5em;
+}
+#navmenu{
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+    border-bottom: 5px solid var(--main-color);
+}
+#navmenu ul{
+    list-style: none;
+    padding-bottom: 1em;
+    padding-top: 4em;
+    margin: 0;
+}
+#navmenu ul li{
+    padding: 0.3em;
+    width: fit-content;
+    margin: 1em auto;
+}
+
+#navmenu ul li a{
+    padding: 0.3em;
+    margin: 0.5em;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+#navmenu ul li a::after{
+    content: "";
+    height: 0px;
+}
+
+/* Aktiv länk i menun */
+.current-menu-item::after, #navmenu ul li a:hover:after{
+    content: "";
+    height: 10px !important;
+    width: 100%;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+.spacer{
+    padding-top: 5em;
+}
+
+
+
+/* Media query för desktop */
+@media screen and (min-width: 1200px){
+    .spacer{
+        padding-top: 7em;
+    }
+
+    .logo img{
+        width: 184px;
+        position: absolute;
+    }
+
+    #navmenu{
+        display: block !important;
+        border-bottom: none;
+    }
+    .centermenu{
+        margin: auto;
+        max-width: 800px;
+        padding-top: 2em;
+
+    }
+    #navmenu ul{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 !important;
+    }
+    #navmenu ul li{
+        
+        padding: 0 !important;
+        margin: 0.5em;
+    }
+
+    #menu-btn{
+        display: none;
+    }
+}

@@ -1,0 +1,41 @@
+
+h1{
+    padding: 0.5em;
+    margin: 0;
+    background-color: var(--main-color);
+    color: white;
+    width: 180px;
+    text-align: center;
+    
+
+
+    margin: auto;
+}
+.anchor{
+    position: relative;
+    margin-bottom: 4em;
+}
+
+
+/* Media query för tablet */
+@media screen and (min-width: 700px){
+
+    h1{
+        position: absolute;
+        height: fit-content;
+        left: 0; 
+        right: 0; 
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 380px;
+    }
+    .hero{
+        max-width: 1291px;
+        width: 85%;
+        display: block;
+        margin: auto;
+    }
+
+    
+}

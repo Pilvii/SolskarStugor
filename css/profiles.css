@@ -1,0 +1,43 @@
+.profiles{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 4em;
+}
+
+.profiles h2{
+    margin-bottom: 2em;
+    margin-top: 4em;
+}
+.profiles img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.profile{
+    margin: 0.5em;
+    margin-bottom: 3em;
+}
+.name{
+    margin: 0;
+}
+
+.profiles .profile-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* Media query for tablet */
+@media screen and (min-width: 700px){
+    .profiles img{
+        width: 100%;
+    }
+
+    
+}
+
+/* Media query for desktop */
+@media screen and (min-width: 1200px){
+    
+}
