@@ -69,3 +69,16 @@ function wpa_alter_cat_links( $termlink, $term, $taxonomy ){
 
 }
 add_filter( 'term_link', 'wpa_alter_cat_links', 10, 3 );
+
+
+
+//aktivera multiple post thumbnails
+if (class_exists('MultiPostThumbnails')) {
+ 
+    new MultiPostThumbnails(array(
+    'label' => 'Secondary Image',
+    'id' => 'secondary-image',
+    'post_type' => 'post'
+    ) );
+ 
+ }
