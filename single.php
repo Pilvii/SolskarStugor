@@ -27,6 +27,11 @@
                                 the_post_thumbnail('thumbnail-big');
                                 
                             }
+                            if (class_exists('MultiPostThumbnails')) {
+                                
+                                MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image', NULL,  'thumbnail-big',);
+                                    
+                            }
                             ?>
                 
                             

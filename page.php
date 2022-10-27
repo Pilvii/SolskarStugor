@@ -73,7 +73,7 @@
                                 ?>
                                 <div class="text">
                                     <h3><?php the_title();?></h3>
-                                    <p class="price"><?php echo get_post_meta($post->ID, 'price', true);?> / dygn</p>
+                                    <p class="price"><?php echo get_post_meta($post->ID, 'price', true);?> kr / dygn</p>
                                     <?php the_excerpt();?>
                                     <a href="<?php the_permalink(); ?>"><?php the_title();?></a>
                                 </div>
