@@ -50,3 +50,22 @@ add_action( 'after_setup_theme', 'add_titles' );
 function add_titles(){
     add_theme_support( 'title-tag' );
 }
+
+
+//peka om kategori-sidor till page
+// (så att breadcrums pekar rätt)
+//modifierad från: https://wordpress.stackexchange.com/questions/106042/force-wordpress-to-show-pages-instead-of-category
+function wpa_alter_cat_links( $termlink, $term, $taxonomy ){
+
+    if( 'category' != $taxonomy ) return $termlink;
+
+    //händer bara om kategorien är aktiviteter eller bo hos oss
+    if(strpos($termlink, "category/aktiviteter")
+    || strpos($termlink, "category/bo-hos-oss")){
+        return str_replace( '/category', '', $termlink );
+    }
+    return $termlink;
+    
+
+}
+add_filter( 'term_link', 'wpa_alter_cat_links', 10, 3 );

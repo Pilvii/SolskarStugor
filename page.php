@@ -51,7 +51,7 @@
     <?php
         if(is_page("bo-hos-oss")){
             
-            query_posts('category_name=stuga');
+            query_posts('category_name=bo-hos-oss');
             if(have_posts()){
                 ?><section class="houses"><?php
                 while(have_posts()){
@@ -93,7 +93,7 @@
     <!-- Aktiviteter -->
     <?php
         if(is_page("aktiviteter")){
-            query_posts('category_name=aktivitet');
+            query_posts('category_name=aktiviteter');
             if(have_posts()){
                 ?><section class="activities"><?php
                 while(have_posts()){
@@ -102,15 +102,16 @@
 
                         <article>
                             <a href="<?php the_permalink();?>">
-                                <picture>
-                                    <source media="(max-width: 700px)" srcset="<?php the_post_thumbnail_url('activity-small'); ?>">
-                                    <?php the_post_thumbnail('preview'); ?>
-                                </picture>
+                                <?php if(has_post_thumbnail()){?>
+                                    <picture>
+                                        <source media="(max-width: 700px)" srcset="<?php the_post_thumbnail_url('activity-small'); ?>">
+                                        <?php the_post_thumbnail('preview'); ?>
+                                    </picture>
+                                <?php } ?>
                                 
                                 <div class="veil"></div>
                                 <p class="title-overlay"><?php the_title();?></p>
                                 <p class="under"><?php the_title();?></p>
-
                             </a>
                         </article>
 
@@ -127,7 +128,7 @@
     <!-- Om oss -->
     <?php
         if(is_page("om-oss")){
-            query_posts('category_name=anstalld');
+            query_posts('category_name=om-oss');
             if(have_posts()){
                 ?>
                 <section class="profiles">
@@ -138,7 +139,9 @@
                             the_post();
                             ?>
                             <div class="profile">
-                                <?php the_post_thumbnail('profile'); ?>
+                            <?php if(has_post_thumbnail()){
+                                the_post_thumbnail('profile'); 
+                                }?>
                                 <p class="name"><?php the_title(); ?></p>
                             </div>
                             <?php

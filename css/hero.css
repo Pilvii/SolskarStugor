@@ -17,6 +17,8 @@ h1{
 }
 .hero{
     display: none;
+    max-height: 417px;
+    object-fit: cover;
 }
 
 /* Media query för tablet */
