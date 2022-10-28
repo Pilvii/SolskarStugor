@@ -1,0 +1,36 @@
+.header-img{
+    width: 100%;
+    display: none;
+    
+}
+
+.header-anchor{
+    position: relative;
+    top:0;
+}
+
+.slogan{
+    max-width: 70%;
+    width: fit-content;
+}
+
+/* Media query för tablet */
+@media screen and (min-width: 700px){
+    .header-img{
+        width: 100%;
+        display: block;
+    }
+}
+
+
+/* Media query för desktop */
+@media screen and (min-width: 1000px){
+    .header-img{
+        width: 100%;
+
+    }
+    .header-anchor{
+        position: absolute;
+        top:0;
+    }
+}

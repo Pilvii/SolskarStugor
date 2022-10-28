@@ -25,27 +25,20 @@
     margin-top: 1em;
     max-width: 100%;
 }
-.grid2{
+.flex-house{
     margin-top: 4em;
 }
-.grid2 img{
-    display: block;
-    width: 100%;
-    max-width: 653px;
-    margin:auto;
-    margin-top: 0;
-}
-.grid2 p, .book{
+
+.flex-house p, .book{
     margin:auto;
     margin-top: 2em;
     width: 100%;
 }
 
 
-.col2{
-    max-width: 653px;
-    margin:auto;
-    margin-top: 4em;
+
+.metaslider{
+    margin-bottom: 4em;
 }
 
 .book{
@@ -94,15 +87,18 @@
 
 /* Media query for desktop */
 @media screen and (min-width: 1200px){
-    .grid2{
-        margin-top: 3em;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2em;
+   
+
+    .metaslider{
+        width: 50% !important;
+        float: left;
+        padding: 1em;
     }
-    .grid2 p{
-        margin-top:0;
+    .house p{
+        max-width: 100%;
+        padding-top: 1em;
     }
+
     .price-post{
         font-size: 16px !important;
     }

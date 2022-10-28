@@ -22,12 +22,12 @@ Template Post Type: post
                     <h1 class="post-title"><?php the_title();?></h1>
                     <div class="post">
                         <p class="price price-post"><?php echo get_post_meta($post->ID, 'price', true);?> kr / dygn</p>
-                        <div class="grid2">
-                            <?php echo do_shortcode('[metaslider id="83"]'); ?>
-                            <div class="col2">
+                        <div class="house">
+                            
+                            
                                 <?php the_content(); ?>
-                                <a class="book" href="#">Boka</a>
-                            </div>
+                                <!-- <a class="book" href="#">Boka</a> -->
+                            
                         </div>
                     </div>
 

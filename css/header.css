@@ -70,7 +70,6 @@ i{
 }
 
 
-
 /* Media query för desktop */
 @media screen and (min-width: 1200px){
     .spacer{
@@ -85,6 +84,8 @@ i{
     #navmenu{
         display: block !important;
         border-bottom: none;
+        background-color: transparent;
+        max-width: 1920px;
     }
     .centermenu{
         margin: auto;

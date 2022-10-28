@@ -10,13 +10,13 @@ function register_menus(){
 }
 
 //aktivera custom herobild
-/* $args = array(
+$args = array(
     'default-image' => get_template_directory_uri() . '/images/hero.jpg',
-    'width' => 1291,
-    'height' => 417,
+    'width' => 1920,
+    'height' => 800,
     'uploads' => true
 );
-add_theme_support('custom-header', $args); */
+add_theme_support('custom-header', $args);
 
 
 
