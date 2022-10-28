@@ -82,3 +82,18 @@ if (class_exists('MultiPostThumbnails')) {
     ) );
  
  }
+
+
+ //aktivera widget area
+ add_action('widgets_init', 'activate_widgets');
+ 
+ function activate_widgets(){
+ 
+     //info-ruta på starsidan
+     register_sidebar(array(
+         'name'           => 'start-info',
+         'id'             => "start-info",
+         'description'    => 'Inforuta på startsidan'
+     ));
+}
+

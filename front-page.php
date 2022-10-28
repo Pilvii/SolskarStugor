@@ -15,7 +15,33 @@
                         </picture>
                         <h1 class="slogan"><?php bloginfo('description'); ?></h1>
                     </div>
+
                     <?php
+                    if(is_active_sidebar('start-info')){
+                        ?>
+                        <div class="grid-front">
+
+                            <div class="front-content">
+                                <?php the_content();?>
+                            </div>
+
+                            <div class="widgetbox info-widget">
+                                <?php
+                                dynamic_sidebar('start-info');
+                                ?>
+                            </div>
+
+                        </div>
+                        
+                        <?php
+                    }else{
+                        ?>
+                            <div class="front-content">
+                                <?php the_content();?>
+                            </div>
+                        <?php
+                    }
+                    
                 }
             }
 

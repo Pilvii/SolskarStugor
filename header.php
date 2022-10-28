@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header <?php  if(is_page("startsida")): echo 'class="start-header"'; endif;?>>
         <a class="logo" href="<?= get_home_url();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo"></a>
         <button id="menu-btn" aria-expanded="false" aria-controls="navmenu" onclick="togglemenu()">
             <i class="fa-solid fa-bars"></i>
