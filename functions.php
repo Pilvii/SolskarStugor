@@ -93,7 +93,9 @@ if (class_exists('MultiPostThumbnails')) {
      register_sidebar(array(
          'name'           => 'start-info',
          'id'             => "start-info",
-         'description'    => 'Inforuta på startsidan'
+         'description'    => 'Inforuta på startsidan',
+         'before_widget'  => '<div>',
+         'after_widget'   => '</div>'
      ));
 }
 
