@@ -53,12 +53,13 @@
             
             query_posts('category_name=bo-hos-oss');
             if(have_posts()){
-                ?><section class="houses"><?php
+                ?><section class="houses">
+                <h2>Stugorna</h2>
+                <div class="flex">
+                <?php
                 while(have_posts()){
                     the_post();
                     ?>
-                        <h2>Stugorna</h2>
-                        <div class="flex">
                             <article>
                                 <?php
                                     if(has_post_thumbnail()){
@@ -79,11 +80,11 @@
                                 </div>
 
                             </article>
-                        </div>
+                        
                         <?php
                         
                 }
-                ?></section><?php
+                ?></div></section><?php
             }
             
         }
