@@ -40,7 +40,7 @@
                             ?>
                             <div class="text">
                                 <h2><?php the_title();?></h2>
-                                <p class="date"><?php the_date();?></p>
+                                <p class="date"><?php echo get_the_date();?></p>
                                 <?php the_excerpt();?>
                                 <a href="<?php the_permalink(); ?>">Läs mer<span class="sr-only"> om "<?php the_title();?>"</span></a>
                             </div>
